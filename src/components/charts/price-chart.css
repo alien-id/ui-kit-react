@@ -1,0 +1,136 @@
+.alien-price-chart {
+  display: flex;
+  flex-direction: column;
+}
+
+.alien-price-chart-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 16px 16px 0;
+}
+
+.alien-price-chart-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.alien-price-chart-value {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--alien-color-text-primary, #fff);
+  line-height: 1.25;
+}
+
+.alien-price-chart-label {
+  font-size: 14px;
+  color: var(--alien-color-text-secondary, #8d8d8d);
+  margin-top: 2px;
+}
+
+.alien-price-chart-stats {
+  display: flex;
+  flex-direction: column;
+}
+
+.alien-price-chart-stats--end {
+  align-items: flex-end;
+}
+
+.alien-price-chart-stats--start {
+  align-self: flex-start;
+}
+
+.alien-price-chart-change {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.alien-price-chart-change-text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.alien-price-chart-change-text--positive {
+  color: #03aa58;
+}
+
+.alien-price-chart-change-text--negative {
+  color: #f43f5d;
+}
+
+.alien-price-chart-period-label {
+  font-size: 12px;
+  color: var(--alien-color-text-secondary, #8d8d8d);
+  margin-top: 2px;
+}
+
+.alien-price-chart-area {
+  position: relative;
+  width: 100%;
+  cursor: crosshair;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.alien-price-chart-area svg,
+.alien-price-chart-area svg * {
+  transition: none !important;
+}
+
+.alien-price-chart-crosshair {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  pointer-events: none;
+}
+
+.alien-price-chart-overlay {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  pointer-events: none;
+}
+
+.alien-price-chart-dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.alien-price-chart-periods {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 0 16px;
+}
+
+.alien-price-chart-period-btn {
+  padding: 6px 16px;
+  border-radius: 9999px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: var(--alien-color-text-secondary, #8d8d8d);
+}
+
+.alien-price-chart-period-btn:hover {
+  color: var(--alien-color-text-primary, #fff);
+}
+
+.alien-price-chart-period-btn--active {
+  background-color: var(--alien-color-primary-tinted, rgba(41, 121, 255, 0.16));
+  color: var(--alien-color-primary, #2979ff);
+}
+
+.alien-price-chart-period-btn--active:hover {
+  color: var(--alien-color-primary, #2979ff);
+}
