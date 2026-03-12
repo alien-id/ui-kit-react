@@ -1,5 +1,5 @@
 {
-  "name": "@alien-id/react-ui-kit",
+  "name": "@alien-id/ui-kit-react",
   "version": "0.1.1",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -23,7 +23,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alien-id/react-ui-kit.git"
+    "url": "git+https://github.com/alien-id/ui-kit-react.git"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
