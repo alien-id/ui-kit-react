@@ -2,18 +2,6 @@
 
 UI components for Alien miniapps.
 
-## Storybook
-
-Browse all components and their variants in the live Storybook:
-
-**https://main.d1duwphdfo3vec.amplifyapp.com**
-
-To run Storybook locally:
-
-```bash
-npm run storybook
-```
-
 ## Installation
 
 ```bash
@@ -26,6 +14,18 @@ Import styles in your app entry:
 
 ```tsx
 import "@alien-id/react-ui-kit/styles.css";
+```
+
+## Storybook
+
+Browse all components and their variants in the live Storybook:
+
+**https://main.d1duwphdfo3vec.amplifyapp.com**
+
+To run Storybook locally:
+
+```bash
+npm run storybook
 ```
 
 ## Components
