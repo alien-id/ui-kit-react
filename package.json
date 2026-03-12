@@ -1,6 +1,6 @@
 {
-  "name": "@alien_org/react-ui-kit",
-  "version": "0.0.1",
+  "name": "@alien-id/react-ui-kit",
+  "version": "0.1.0",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",

@@ -1,4 +1,4 @@
-# @alien_org/react-ui-kit
+# @alien-id/react-ui-kit
 
 UI components for Alien miniapps.
 
@@ -17,15 +17,15 @@ npm run storybook
 ## Installation
 
 ```bash
-bun add @alien_org/react-ui-kit
+bun add @alien-id/react-ui-kit
 # or
-npm install @alien_org/react-ui-kit
+npm install @alien-id/react-ui-kit
 ```
 
 Import styles in your app entry:
 
 ```tsx
-import "@alien_org/react-ui-kit/styles.css";
+import "@alien-id/react-ui-kit/styles.css";
 ```
 
 ## Components
