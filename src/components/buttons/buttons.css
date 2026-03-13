@@ -47,3 +47,10 @@
   color: var(--alien-color-disabled-text, rgba(141, 141, 141, 0.24));
   background: transparent;
 }
+
+.alien-button-small {
+  width: auto;
+  height: 28px;
+  padding: 4px 10px;
+  font-size: 13px;
+}
