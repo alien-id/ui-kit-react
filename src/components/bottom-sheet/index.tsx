@@ -24,6 +24,8 @@ const BottomSheetComponent = ({
       open={open}
       onOpenChange={onOpenChange}
       dismissible={dismissible}
+      noBodyStyles
+      disablePreventScroll={false}
     >
       {renderTrigger && <Drawer.Trigger render={renderTrigger} />}
       <Drawer.Portal>
