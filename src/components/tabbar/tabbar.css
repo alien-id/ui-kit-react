@@ -1,0 +1,30 @@
+.alien-tabbar {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  padding: 4px;
+  border-radius: 40px;
+  background: var(--alien-color-neutral-alpha, rgba(141, 141, 141, 0.16));
+  backdrop-filter: blur(40px);
+}
+
+.alien-tabbar-tab {
+  font-family: var(--font-booton);
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: var(--alien-color-text, #ffffff);
+  padding: 13px 20px;
+  border-radius: 40px;
+  font-weight: 469;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.alien-tabbar-tab-active {
+  background: var(--alien-color-neutral-alpha, rgba(141, 141, 141, 0.16));
+}
