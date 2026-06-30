@@ -1,0 +1,119 @@
+/* The frame: border, radius and padding live here so the textarea inside can
+   scroll without its scrollbar touching the rounded corners. */
+.alien-textarea-wrapper {
+  font-family: var(--font-booton);
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  border: 2px solid var(--alien-color-secondary, rgba(141, 141, 141, 0.24));
+  border-radius: 24px;
+  background: transparent;
+  padding: 12px;
+  transition: border-color 0.15s;
+}
+
+.alien-textarea-wrapper:focus-within {
+  border-color: var(--alien-color-primary, #2979ff);
+}
+
+.alien-textarea-wrapper:has(textarea[aria-invalid="true"]) {
+  border-color: #ef4444;
+}
+
+.alien-textarea-wrapper:has(textarea:disabled) {
+  opacity: 0.5;
+}
+
+/* Animatable fade lengths so the edge gradients transition in/out smoothly. */
+@property --alien-ta-fade-top {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+@property --alien-ta-fade-bottom {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+
+/* Fills the frame edge to edge and top to bottom. */
+.alien-textarea {
+  flex: 1;
+  min-height: 0;
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 20px;
+  color: inherit;
+  outline: none;
+  resize: none;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--alien-color-secondary, rgba(141, 141, 141, 0.24))
+    transparent;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    #000 var(--alien-ta-fade-top),
+    #000 calc(100% - var(--alien-ta-fade-bottom)),
+    transparent
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    #000 var(--alien-ta-fade-top),
+    #000 calc(100% - var(--alien-ta-fade-bottom)),
+    transparent
+  );
+  transition:
+    --alien-ta-fade-top 0.2s ease,
+    --alien-ta-fade-bottom 0.2s ease;
+}
+
+.alien-textarea:disabled {
+  cursor: not-allowed;
+}
+
+.alien-textarea::placeholder {
+  color: var(--alien-color-text-secondary, rgba(141, 141, 141, 1));
+}
+
+.alien-textarea::selection {
+  background: var(--alien-color-primary, #2979ff);
+  color: var(--alien-color-text-on-primary, #ffffff);
+}
+
+.alien-textarea::-webkit-scrollbar {
+  width: 6px;
+}
+
+.alien-textarea::-webkit-scrollbar-thumb {
+  background: var(--alien-color-secondary, rgba(141, 141, 141, 0.24));
+  border-radius: 3px;
+}
+
+.alien-textarea::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Pill badge floating in the bottom-right corner. */
+.alien-textarea-count {
+  position: absolute;
+  right: 16px;
+  bottom: 12px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--alien-color-surface-raised, oklch(0.27 0 0));
+  font-size: 10px;
+  line-height: 14px;
+  text-align: right;
+  color: var(--alien-color-text-secondary, rgba(141, 141, 141, 1));
+  pointer-events: none;
+  user-select: none;
+}
