@@ -1,4 +1,5 @@
 export { BottomSheet } from './components/bottom-sheet';
+export type { ButtonProps, ButtonVariant } from './components/buttons';
 export {
   Button,
   ButtonSmall,
@@ -11,14 +12,9 @@ export {
   TintedButton,
   TintedButtonSmall,
 } from './components/buttons';
-export type { ButtonProps, ButtonVariant } from './components/buttons';
-export { PriceChart } from './components/charts';
-export type {
-  PriceChartDataPoint,
-  PriceChartProps,
-  TimePeriod,
-} from './components/charts/types';
 export {
   FloatingLabelInput,
   Input,
 } from './components/inputs';
+export type { TabbarProps, TabItem } from './components/tabbar';
+export { Tabbar } from './components/tabbar';

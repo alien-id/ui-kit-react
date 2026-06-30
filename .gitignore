@@ -3,3 +3,7 @@ dist/
 
 *storybook.log
 storybook-static
+
+# vitest browser-mode failure artifacts
+**/__screenshots__/
+.vitest-attachments/
