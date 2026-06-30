@@ -12,9 +12,11 @@ export {
   TintedButton,
   TintedButtonSmall,
 } from './components/buttons';
+export type { TextareaProps } from './components/inputs';
 export {
   FloatingLabelInput,
   Input,
+  Textarea,
 } from './components/inputs';
 export type { TabbarProps, TabItem } from './components/tabbar';
 export { Tabbar } from './components/tabbar';

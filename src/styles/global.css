@@ -7,6 +7,8 @@
   --alien-color-neutral-alpha: oklch(0.6434 0 0 / 0.16);
   --alien-color-disabled-bg: oklch(0.6434 0 0 / 0.16);
   --alien-color-disabled-text: oklch(0.4202 0 0);
+  --alien-color-text-secondary: oklch(0.6434 0 0);
+  --alien-color-surface-raised: oklch(0.27 0 0);
   --alien-color-text-on-primary: oklch(1 0 0);
   --alien-color-text: oklch(1 0 0);
 }
