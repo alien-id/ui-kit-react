@@ -1,10 +1,12 @@
 :root {
   --font-booton: "Booton", system-ui, sans-serif;
   font-family: var(--font-booton);
-  --alien-color-primary: #2979ff;
-  --alien-color-primary-tinted: rgba(41, 121, 255, 0.16);
-  --alien-color-secondary: rgba(141, 141, 141, 0.24);
-  --alien-color-disabled-bg: rgba(141, 141, 141, 0.16);
-  --alien-color-disabled-text: rgba(141, 141, 141, 0.24);
-  --alien-color-text-on-primary: #ffffff;
+  --alien-color-primary: oklch(0.6061 0.214 260.38);
+  --alien-color-primary-tinted: oklch(0.6061 0.214 260.38 / 0.16);
+  --alien-color-secondary: oklch(0.6434 0 0 / 0.24);
+  --alien-color-neutral-alpha: oklch(0.6434 0 0 / 0.16);
+  --alien-color-disabled-bg: oklch(0.6434 0 0 / 0.16);
+  --alien-color-disabled-text: oklch(0.4202 0 0);
+  --alien-color-text-on-primary: oklch(1 0 0);
+  --alien-color-text: oklch(1 0 0);
 }
